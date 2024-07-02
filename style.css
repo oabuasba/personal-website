@@ -1,0 +1,91 @@
+.navbar-custom {
+  background-color: rgb(37, 37, 37);
+  width: 100%;
+  position: sticky;
+}
+
+.nav-link {
+  color: rgb(179, 140, 179);
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: rgb(255, 255, 255);
+}
+
+.nav-link.dropdown-toggle {
+  color: rgb(255, 255, 255);
+}
+
+#about {
+  color: rgb(179, 140, 179);
+  background-color: rgb(41, 39, 41);
+  text-align: center;
+  padding: 25px;
+}
+
+#education {
+  color: rgb(179, 140, 179);
+  text-align: start;
+  background-color: rgb(41, 39, 41);
+}
+
+#courses {
+  color: rgb(248, 248, 248);
+  text-align: start;
+  list-style-type: circle;
+
+}
+
+#courseList {
+  color: rgb(179, 140, 179);
+  background-color: rgb(236, 203, 232);
+}
+
+#coursePane {
+  background-color: rgb(37, 37, 37);
+  border: solid;
+  border-color: rgb(41, 39, 41);
+}
+
+.custom-hr {
+  border: 0;
+  border-top: 5px solid rgb(179, 140, 179); 
+  width: 80%;
+  margin: 0 auto 5rem; 
+}
+
+.purpleText {
+  color: rgb(179, 140, 179);
+}
+
+.swch {
+  border-radius: 10px;
+  margin: auto;
+  background-color:  rgb(179, 140, 179);
+}
+
+.darkRow {
+  background-color: rgb(37, 37, 37);
+  width: 75%;
+}
+
+#progLangs {
+  border: none;
+  background-color: rgb(37, 37, 37);
+}
+
+#progLangs:hover {
+  color: rgb(41, 39, 41);
+  background-color: hwb(300 55% 30%);
+}
+
+.hiddenProgLangs {
+  display: block;
+}
+
+.skillFrame {
+  /* border: solid;
+  border-top: none;
+  border-color: rgb(41, 39, 41); */
+}
