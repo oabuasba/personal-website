@@ -77,15 +77,29 @@
 
 #progLangs:hover {
   color: rgb(41, 39, 41);
-  background-color: hwb(300 55% 30%);
+  background-color: rgb(179, 140, 179);
 }
 
 .hiddenProgLangs {
   display: block;
 }
 
-.skillFrame {
-  /* border: solid;
+/* .skillFrame {
+  border: solid;
   border-top: none;
-  border-color: rgb(41, 39, 41); */
+  border-color: rgb(41, 39, 41);
+} */
+
+.repoBtn {
+  color: white;
+  border: 5px #ffffff solid;
+  border-radius: 100px;
+  width: auto;
+  height: "auto";
+  font-size: 1.1em;
+}
+
+.repoBtn:hover {
+  border-color: rgb(179, 140, 179);
+  background-color: rgb(179, 140, 179);
 }
