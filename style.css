@@ -17,6 +17,11 @@
   color: rgb(255, 255, 255);
 }
 
+.dropdown-menu {
+  color: white;
+  background-color: rgb(37, 37, 37);
+}
+
 #about {
   color: rgb(179, 140, 179);
   background-color: rgb(41, 39, 41);
