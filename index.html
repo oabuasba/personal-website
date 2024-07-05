@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assests/css/docs.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://getbootstrap.com/docs/5.3/assests/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
     <link href="style.css" rel="stylesheet">
     <title>Omar Abuasba</title>
   </head>
@@ -192,44 +193,99 @@
         <h2 class="fs-3" style="color: rgb(179, 140, 179);">Skills</h2>
         <hr class="mx-auto mb-3 custom-hr"></hr>
         <div class="row mx-auto darkRow"> 
-          <div class="col-lg-12 col-sm-12">
-                <p class="fs-3 purpleText text-center" style="padding-top: 20px; padding-bottom: 20px;">Back End Languages</p>
+          <div class="col-lg-12 col-sm-12" style="padding-top: 20px;">
+              <p class="fs-3 purpleText text-center">Back End Languages</p>
+              <p class="fw-light text-center" style="color: white; font-size: .95em;"><em>Hover to learn more!</em></p>
           </div>   
         </div>
         <div class="hiddenProgLangs">
           <div class="row mx-auto darkRow col-12 col-sm-6 col-md-3 col-lg-2 col-xl-3 d-flex justify-content-center align-items-center">
             <div class="col skillFrame">
-              <p class="fs-4 fw-normal" style="color: white;">Java</p>
-              <img src="assets\java.png" height="125px" width="auto">
+                <p class="fs-4 fw-normal">Java</p>
+                <div class = "flipFrame">
+                  <div class="outerFrame d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets\java.png" height="125px" width="auto">
+                  </div>
+                <div class="innerFrame justify-content-start align-items-center">
+                  <div class="col" id ="txtFrame">
+                    <p class="fs-6 fw-normal">Java was the first coding language I learned. I worked with it during my first year to learn the fundamentals of coding and object orientation before my coursework shifted me towards C++.</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col skillFrame">
-              <p class="fs-4 fw-normal" style="color: white;">C / C++</p>
-              <img src="assets\cpp.png" height="125px" width="auto">
+              <p class="fs-4 fw-normal">C / C++</p>
+              <div class = "flipFrame">
+                <div class="outerFrame d-flex flex-column justify-content-center align-items-center">
+                  <img src="assets\cpp.png" height="125px" width="auto">
+                </div>
+                <div class="innerFrame justify-content-start align-items-center">
+                  <div class="col" id ="txtFrame">
+                    <p class="fs-6 fw-normal" >C++ was the language I used in my second-year courses. After picking up on the fundamentals, I used it to do some cool algorithm work such as implementing Dijkstra's algortihm.</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col skillFrame">
-              <p class="fs-4 fw-normal" style="color: white;">Python</p>
-              <img src="assets\python.png" height="125px" width="auto">
+              <p class="fs-4 fw-normal">Python</p>
+              <div class = "flipFrame">
+                <div class="outerFrame d-flex flex-column justify-content-center align-items-center">
+                  <img src="assets\python.png" height="125px" width="auto">
+                </div>
+                <div class="innerFrame justify-content-start align-items-center">
+                  <div class="col" id ="txtFrame">
+                    <p class="fs-6 fw-normal">I've used python to do some quick implementations of sorting algorithms as well as beginning a webscraper project. I hope to expand my skillset while working with the UCRC.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="row mx-auto darkRow"> 
           <div class="col-lg-12 col-sm-12">
-                <p class="fs-3 purpleText text-center" style="padding-top: 20px; padding-bottom: 20px;">Front End</p>
+                <p class="fs-3 purpleText text-center" style="padding-top: 15px;">Front End</p>
           </div>   
         </div>
         <div class="hiddenProgLangs"> 
           <div class="row mx-auto darkRow col-12 col-sm-6 col-md-3 col-lg-2 col-xl-3 d-flex justify-content-center align-items-center">
             <div class="col skillFrame">
-              <p class="fs-4 fw-normal" style="color: white;">JavaScript</p>
-              <img src="assets\js.png" height="125px" width="auto">
+              <p class="fs-4 fw-normal">JavaScript</p>
+              <div class = "flipFrame">
+                <div class="outerFrame d-flex flex-column justify-content-center align-items-center">
+                  <img src="assets\js.png" height="125px" width="auto">
+                </div>
+                <div class="innerFrame justify-content-start align-items-center">
+                  <div class="col" style="margin: 45px 30px;">
+                    <p class="fs-6 fw-normal">I used JavaScript to work on the Depop Webscraper API as well as adding some functionality to this website.</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col skillFrame">
-              <p class="fs-4 fw-normal" style="color: white;">CSS</p>
-              <img src="assets\css.png" height="125px" width="auto">
+              <p class="fs-4 fw-normal">CSS</p>
+              <div class = "flipFrame">
+                <div class="outerFrame d-flex flex-column justify-content-center align-items-center">
+                  <img src="assets\html.png" height="125px" width="auto">
+                </div>
+                <div class="innerFrame justify-content-start align-items-center">
+                  <div class="col" style="margin: 45px 30px;">
+                    <p class="fs-6 fw-normal">I taught myself how to use CSS through the Bootstrap framework in combination with some custom styling to make this website.</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col skillFrame">
-              <p class="fs-4 fw-normal" style="color: white;">HTML</p>
-              <img src="assets\html.png" height="125px" width="auto">
+              <p class="fs-4 fw-normal">HTML</p>
+              <div class = "flipFrame">
+                <div class="outerFrame d-flex flex-column justify-content-center align-items-center">
+                  <img src="assets\css.png" height="125px" width="auto">
+                </div>
+                <div class="innerFrame justify-content-start align-items-center">
+                  <div class="col" style="margin: 45px 30px;">
+                    <p class="fs-6 fw-normal">I used HTML to develop this website and searched through HTML content with my webscraper.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -241,46 +297,136 @@
           <div class="hiddenProgLangs"> 
             <div class="row mx-auto darkRow col-12 col-sm-6 col-md-3 col-lg-2 col-xl-3 d-flex justify-content-center align-items-center"> 
               <div class="col skillFrame">
-                <p class="fs-4 fw-normal" style="color: white;">Cheerio</p>
-                <img src="assets\cheerio.png" height="125px" width="auto"> 
+                <p class="fs-4 fw-normal">Cheerio</p>
+                <div class = "flipFrame">
+                  <div class="outerFrame d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets\cheerio.png" height="125px" width="auto">
+                  </div>
+                  <div class="innerFrame justify-content-start align-items-center">
+                    <div class="col" id="txtFrame2">
+                      <p class="fs-6 fw-normal">I used Cheerio to parse HTML content for my webscraper project.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col skillFrame">
-                <p class="fs-4 fw-normal" style="color: white;">Puppeteer</p>
-                <img src="assets\puppeteer.png" height="125px" width="auto"> 
+                <p class="fs-4 fw-normal">Puppeteer</p>
+                <div class = "flipFrame">
+                  <div class="outerFrame d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets\puppeteer.png" height="125px" width="auto">
+                  </div>
+                  <div class="innerFrame justify-content-start align-items-center">
+                    <div class="col"  id="txtFrame2">
+                      <p class="fs-6 fw-normal">I used Puppeteer as a headless browser to gather HTML content.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col skillFrame">
-                <p class="fs-4 fw-normal" style="color: white;">Bootstrap</p>
-                <img src="assets\bootstrap.png" height="125px" width="auto"> 
+                <p class="fs-4 fw-normal">Bootstrap</p>
+                <div class = "flipFrame">
+                  <div class="outerFrame d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets\bootstrap.png" height="125px" width="auto">
+                  </div>
+                  <div class="innerFrame justify-content-start align-items-center">
+                    <div class="col" style="margin: 40px 5px;">
+                      <p class="fs-6 fw-normal">Bootstrap was used for the development of this website, my choice for CSS frameworks.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col skillFrame">
-                <p class="fs-4 fw-normal" style="color: white;">JQuery</p>
-                <img src="assets\jquery2.png" height="125px" width="auto"> 
+                <p class="fs-4 fw-normal">JQuery</p>
+                <div class = "flipFrame">
+                  <div class="outerFrame d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets\jquery2.png" height="125px" width="auto">
+                  </div>
+                  <div class="innerFrame justify-content-start align-items-center">
+                    <div class="col" id="txtFrame2">
+                      <p class="fs-6 fw-normal">I used some JQuery on this website to add buttons and event handlers.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col skillFrame">
-                <p class="fs-4 fw-normal" style="color: white;">Node.js</p>
-                <img src="assets\node.png" height="125px" width="auto"> 
+                <p class="fs-4 fw-normal">Node.js</p>
+                <div class = "flipFrame">
+                  <div class="outerFrame d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets\node.png" height="125px" width="auto">
+                  </div>
+                  <div class="innerFrame justify-content-start align-items-center">
+                    <div class="col" style="margin-top: 40px; margin-bottom: 40px;">
+                      <p class="fs-6 fw-normal">I used Node.js to develop a Depop API, which allowed me to test it through SoapUI.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="row mx-auto darkRow col-12 col-sm-6 col-md-3 col-lg-2 col-xl-3 d-flex justify-content-center align-items-center" style="padding-top: 50px; padding-bottom: 30px;"> 
               <div class="col skillFrame">
-                <p class="fs-4 fw-normal" style="color: white;">Linux & WSL</p>
-                <img src="assets\linux.png" height="125px" width="auto"> 
+                <p class="fs-4 fw-normal">Linux & Ubuntu</p>
+                <div class = "flipFrame">
+                  <div class="outerFrame d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets\linux.png" height="125px" width="auto">
+                  </div>
+                  <div class="innerFrame justify-content-start align-items-center">
+                    <div class="col" style="margin-top: 40px; margin-bottom: 40px;">
+                      <p class="fs-6 fw-normal">I've been using Linux for C++ projects, enhancing my programming skills and efficiency.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col skillFrame">
-                <p class="fs-4 fw-normal" style="color: white;">Git</p>
-                <img src="assets\git.png" height="125px" width="auto"> 
+                <p class="fs-4 fw-normal">Git</p>
+                <div class = "flipFrame">
+                  <div class="outerFrame d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets\git.png" height="125px" width="auto">
+                  </div>
+                  <div class="innerFrame justify-content-start align-items-center">
+                    <div class="col" style="margin: 40px 10px;">
+                      <p class="fs-6 fw-normal">I've been using Git for version control to manage and track changes in my code efficiently.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col skillFrame">
-                <p class="fs-4 fw-normal" style="color: white;">REST APIs</p>
-                <img src="assets\rest2.png" height="125px" width="auto"> 
+                <p class="fs-4 fw-normal">REST APIs</p>
+                <div class = "flipFrame">
+                  <div class="outerFrame d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets\rest2.png" height="125px" width="auto">
+                  </div>
+                  <div class="innerFrame justify-content-start align-items-center">
+                    <div class="col" style="margin: 40px 30px;">
+                      <p class="fs-6 fw-normal">I've been using REST APIs to integrate external services into my projects.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col skillFrame">
-                <p class="fs-4 fw-normal" style="color: white;">Data Structures</p>
-                <img src="assets\bst5.png" height="125px" width="auto"> 
+                <p class="fs-4 fw-normal">Data Structures</p>
+                <div class = "flipFrame">
+                  <div class="outerFrame d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets\bst5.png" height="125px" width="auto">
+                  </div>
+                  <div class="innerFrame justify-content-start align-items-center">
+                    <div class="col" style="margin-top: 40px; margin-bottom: 40px;">
+                      <p class="fs-6 fw-normal">My understanding of data structures is thorough after several courses and countless projects.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col skillFrame">
-                <p class="fs-4 fw-normal" style="color: white;">Algorithms</p>
-                <img src="assets\algo.gif" height="125px" width="auto"> 
+                <p class="fs-4 fw-normal">Algorithms</p>
+                <div class = "flipFrame">
+                  <div class="outerFrame d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets\algo.gif" height="125px" width="auto">
+                  </div>
+                  <div class="innerFrame justify-content-start align-items-center">
+                    <div class="col" style="margin-top: 40px; margin-bottom: 40px;">
+                      <p class="fs-6 fw-normal">After countless hours of implementing different algorithms, I'm always ready to implement another.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -334,7 +480,7 @@
           </div>
           <div class="row mx-auto darkRow" > 
             <div class="col" style="padding-bottom: 20px;">
-                <button type="button" class="btn repoBtn" id="repoBtn2" href="https://github.com/bwally0/depop-scraper-api">Explore the Repo</button>
+                <button type="button" class="btn repoBtn" id="repoBtn2">Explore the Repo</button>
             </div>
           </div> 
         </div>
