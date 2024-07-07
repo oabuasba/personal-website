@@ -49,7 +49,10 @@
 #coursePane {
   background-color: rgb(37, 37, 37);
   border: solid;
-  border-color: rgb(41, 39, 41);
+}
+
+#eduPane {
+  background-color: rgb(37, 37, 37);
 }
 
 .custom-hr {

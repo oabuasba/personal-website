@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link href="https://getbootstrap.com/docs/5.3/assests/css/docs.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <!-- <link href="https://getbootstrap.com/docs/5.3/assests/css/docs.css" rel="stylesheet"> -->
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
     <script src="node_modules\jquery\dist\jquery.min.js"></script>
     <link href="style.css" rel="stylesheet">
     <title>Omar Abuasba</title>
@@ -28,7 +28,6 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#" style="color:rgb(179, 140, 179)">FACE</a></li>
                 <li><a class="dropdown-item" href="#" style="color:rgb(179, 140, 179)">NGSC</a></li>
-                <li><a class="dropdown-item" href="#" style="color:rgb(179, 140, 179)">UCRC</a></li>
               </ul>
             </li>
           </ul>
@@ -38,26 +37,28 @@
     <main>
       <div id="header">
           <div id="about">
-            <img src="assets\blankpfp.jpg" class="rounded-circle" height="300" width="300" >
+            <img src="assets\blankpfp.jpg" class="rounded-circle" height="250" width="250" >
             <h1 class="fs-1">Omar Abuasba</h1>
             <p class="fs-3" style="color: white">Computer Science & Cross Sector Leadership</p>
           </div>
       </div>
-      <div class="container-fluid text-center" id="education">
+      <div class ="container-fluid text-center" id="education">
         <h2 class="fs-3 text-center">Education</h2>
-          <hr class="mx-auto mb-3 custom-hr">
-            <div class = "container-fluid" id="courseList" style="width: 75%">
-              <div class = "row">
-                <div class = "col-sm-6 text-start border-bottom-0" id="coursePane" style="border-right-width: 10px;">
-                  <h3>
-                    <span class="fs-3 fw-semibold">Computer Science, B.S.</span>
-                    <span class="fs-4 fw-medium" style="float: right;">2026</span>
-                  </h3>
-                  <h3 class="fs-4 fw-medium">
-                    <span>Ira A. Fulton Schools of Engineering</span>
-                    <span class="fs-5 fw-normal" style="float: right;">GPA: 4.00</span>
-                  <h3 class="fs-4 fw-medium">Barrett, The Honors College</h3>
-                  <p class="fs-6" style="margin: 0">Coursework:</p>
+          <hr class="mx-auto mb-3 custom-hr">      
+          <div class="row mx-auto" style="width: 76%">
+            <div class="col d-flex flex-column text-start m-2">
+              <div class="row" id="eduPane">
+                <div class="col-xxl-9 col-xl-8 col-lg-8 col-md-6 col-sm-12 col-12 text-start">
+                  <p class="fs-4 fw-semibold my-2">Computer Science, B.S.</p>
+                  <p class="fs-5 fw-medium my-2">Ira A. Fulton Schools of Engineering</p>
+                  <p class="fs-5 fw-medium my-2">Barrett, The Honors College</p>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 flex-column text-md-end text-sm-start">
+                  <p class="fs-6 fw-normal my-2">2022 - 2026</p>
+                  <p class="fs-6 fw-normal my-4">GPA: 4.00</p>
+                </div>
+                <div class="col">
+                  <p class="fs-6 m-0">Coursework:</p>
                   <ul id="courses">
                     <li>Principles of Programming</li>
                     <li>Object Oriented Programming & Data Structures</li>
@@ -69,104 +70,78 @@
                     <li>Computing Ethics</li>
                   </ul>
                 </div>
-                <div class = "col-sm-6 text-start  border-bottom-0" id="coursePane" style="border-left-width: 10px;">
-                  <h1 class="fs-3 fw-semibold">Cross Sector Leadership, Certificate</h1>
-                  <h2 class="fs-4 fw-medium">Watts College of Public Service and Community Solutions</h2>
-                  <h3 class="fs-4 fw-medium">Next Generation Service Corps (NGSC)</h3>
-                  <p class="fs-6" style="margin: 0">Coursework:</p>
-                  <ul id="courses">
-                    <li>Cross Sector Leadership</li>
-                    <li>Community Impact Lab</li>
-                    <li>Leadership and Change</li>
-                    <li>Cross Sector Collaboration</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="row">
-                <div class = "col-sm-6 text-start border-top-0" id="coursePane" style="border-right-width: 10px;">
-                  <p class="fs-6" style="margin: 0">Upcoming Courses:</p>
-                  <ul id="courses">
-                    <li>Introduction to Software Engineering</li>
-                    <li>Introduction to Theorhetical Computer Science</li>
-                    <li>Information Assurance</li>
-                    <li>Engineering Projects in Community Service (EPICS)</li>
-                    <li>Honors Research w/ Barrett College Fellows</li>
-                  </ul> 
-                </div>
-                <div class = "col-sm-6 text-start border-top-0" id="coursePane" style="border-left-width: 10px;">
-                  <p class="fs-6" style="margin: 0">Upcoming Courses:</p>
-                  <ul id="courses">
-                    <li>Entrepeneurship and Value Creation</li>
-                    <li>Public Service and American Democracy</li>
-                  </ul>
-                  </ul> 
-                </div>
               </div>
             </div>
-        </div>
+            <div class="col d-flex flex-column text-start m-2" id="eduPane">
+              <p class="fs-4 fw-semibold my-1">Cross Sector Leadership, Certificate</p>
+              <p class="fs-5 fw-medium my-1">Watts College of Public Service and Community Solutions</p>
+              <p class="fs-5 fw-medium my-1">Next Generation Service Corps (NGSC)</p>
+              <p class="fs-6 my-1">Coursework:</p>
+              <ul class="mb" id="courses">
+                <li>Cross Sector Leadership</li>
+                <li>Community Impact Lab</li>
+                <li>Leadership and Change</li>
+                <li>Cross Sector Collaboration</li>
+              </ul>
+            </div>
+          </div>
       </div>
-      <div class="container-fluid text-center justify-content-center" id="experience" style="background-color: rgb(41, 39, 41); padding-top: 50px;">
-        <h2 class="fs-3" style="color: rgb(179, 140, 179);">Experience</h2>
+      <div class="container-fluid" id="experience" style="background-color: rgb(41, 39, 41); padding-top: 50px;">
+        <h2 class="fs-3 text-center justify-content-center" style="color: rgb(179, 140, 179);">Experience</h2>
         <hr class="mx-auto mb-3 custom-hr">
         <div class="row mx-auto darkRow" style="padding-top: 20px"> 
-          <div class="col-lg-9 col-md-6 col-sm-0">
-            <h3 class="fs-4 purpleText text-start">Incoming Research Fellow<span class="fs-5 fw-normal" style="color:white"> | Urban Climate Research Center</span></h3>
+          <div class="col-lg-9 col-md-6 col-sm-0 col-0">
+            <h3 class="fs-4 purpleText text-start">Incoming Research Fellow<span class="fs-5 fw-normal" style="color:white"> | ASU Urban Climate Research Center</span></h3>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <h4 class="fs-5 purpleText text-end fw-normal">Aug 2024</h4>
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+            <h4 class="fs-6 purpleText fw-normal text-md-end text-sm-start">Aug 2024</h4>
           </div>
         </div>
         <div class="row mx-auto darkRow"> 
-          <div class="col-lg-10 col-md-6 col-sm-0 text-start">
+          <div class="coltext-start">
             <h4 class="fs-4 fw-normal text-start purpleText">Expected Work</h4>
             <ul id="courses" style="font-size:1.1em;"> 
               <li>Assist with the "Model of Models" project which aims to combine several climate models into one larger model</li>
               <li>Work with NetCDF data from simulations of future climate activity to make calculations</li>
             </ul>  
           </div>  
-          <div class="col-lg-2 col-md-6 col-sm-12 text-end">
-            <h4 class="fs-5 fw-normal purpleText">Tempe, AZ</h4>
-          </div>
         </div>
         <div class="row mx-auto darkRow"> 
           <div class="col text-start">
             <h5 class="fw-light text-center" style="color: white; font-size: .95em; padding-top:20px"><em>"The vision of the Urban Climate Research Center is to deliver transformative scientific advancements and urban climate solutions for diverse urban communities and ecosystems globally."</em></h5>
           </div>
         </div>
-        <div class="row mx-auto darkRow" style="margin-top: 20px"> 
+        <div class="row mx-auto darkRow" style="margin-top: 20px; padding-top: 20px"> 
           <div class="col-lg-9 col-md-6 col-sm-0">
             <h3 class="fs-4 purpleText text-start">Engineering Intern<span class="fs-5 fw-normal" style="color:white"> | Musubi Technologies</span></h3>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <h4 class="fs-5 purpleText text-end fw-normal">June 2024 - Aug 2024</h4>
+            <h4 class="fs-6 purpleText fw-normal text-md-end text-sm-start">June 2024 - Aug 2024</h4>
           </div>
         </div>
         <div class="row mx-auto darkRow"> 
-          <div class="col-lg-10 col-md-6 col-sm-0 text-start">
+          <div class="col text-start">
             <h4 class="fs-4 fw-normal text-start purpleText">Achievements</h4>
             <ul id="courses" style="font-size:1.1em;"> 
               <li>TBD</li>
             </ul>  
           </div>  
-          <div class="col-lg-2 col-md-6 col-sm-12 text-end">
-            <h4 class="fs-5 fw-normal purpleText">Las Vegas, NV</h4>
-          </div>
         </div>
         <div class="row mx-auto darkRow"> 
           <div class="col text-start">
             <h5 class="fw-light text-center" style="color: white; font-size: .95em; padding-top:20px"><em>Musubi Technologies is a startup company creating motorized [redacted].</em></h5>
           </div>
         </div>
-        <div class="row mx-auto darkRow" style="margin-top: 20px"> 
+        <div class="row mx-auto darkRow" style="margin-top: 20px; padding-top: 20px"> 
           <div class="col-lg-9 col-sm-0">
             <h3 class="fs-4 purpleText text-start">Project Management Intern <span class="fs-5 fw-normal" style="color:white">| Sun West Custom Homes & National Hospitality Management</span></h3>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <h4 class="fs-5 purpleText text-end fw-normal">May 2023 - Aug 2023</h4>
+            <h4 class="fs-6 purpleText text-md-end text-sm-start fw-normal">May 2023 - Aug 2023</h4>
           </div>
         </div> 
         <div class="row mx-auto darkRow"> 
-          <div class="col-lg-10 col-md-6 col-sm-0 text-start">
+          <div class="col text-start">
             <h4 class="fs-4 fw-normal text-start purpleText">Achievements</h4>
             <ul id="courses" style="font-size:1.1em;">
               <li>Tracked the building progress of a five story, 120 room hotel, ensuring all rooms were up to standards</li>
@@ -177,9 +152,6 @@
               </ul>
               <li>Assisted with the redevelopment of a server room, ensuring all phones and computers still received service after the redesign.</li>
             </ul>
-          </div>
-          <div class="col-lg-2 col-md-6 col-sm-12 text-end">
-            <h4 class="fs-5 fw-normal purpleText">Las Vegas, NV</h4>
           </div>
           <div class="row mx-autodarkRow"> 
             <div class="col text-start">
@@ -194,7 +166,7 @@
         <hr class="mx-auto mb-3 custom-hr"></hr>
         <div class="row mx-auto darkRow"> 
           <div class="col-lg-12 col-sm-12" style="padding-top: 20px;">
-              <p class="fs-3 purpleText text-center">Back End Languages</p>
+              <p class="fs-3 purpleText text-center">Languages</p>
               <p class="fw-light text-center" style="color: white; font-size: .95em;"><em>Hover to learn more!</em></p>
           </div>   
         </div>
@@ -240,11 +212,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row mx-auto darkRow"> 
-          <div class="col-lg-12 col-sm-12">
-                <p class="fs-3 purpleText text-center" style="padding-top: 15px;">Front End</p>
-          </div>   
         </div>
         <div class="hiddenProgLangs"> 
           <div class="row mx-auto darkRow col-12 col-sm-6 col-md-3 col-lg-2 col-xl-3 d-flex justify-content-center align-items-center">
@@ -356,7 +323,7 @@
                   </div>
                   <div class="innerFrame justify-content-start align-items-center">
                     <div class="col" style="margin-top: 40px; margin-bottom: 40px;">
-                      <p class="fs-6 fw-normal">I used Node.js to develop a Depop API, which allowed me to test it through SoapUI.</p>
+                      <p class="fs-6 fw-normal">I used Node.js to develop a Depop API, which allowed me to use JavaScript for the back end.</p>
                     </div>
                   </div>
                 </div>
@@ -432,16 +399,16 @@
           </div>
         </div> 
       </div>
-      <div class="container-fluid text-center justify-content-center" id="projects" style="background-color: rgb(41, 39, 41); padding-top: 50px;"> 
-        <h2 class="fs-3" style="color: rgb(179, 140, 179);">Projects</h2>
+      <div class="container-fluid" id="projects" style="background-color: rgb(41, 39, 41); padding-top: 50px;"> 
+        <h2 class="fs-3 text-center justify-content-center" style="color: rgb(179, 140, 179);">Projects</h2>
         <hr class="mx-auto mb-3 custom-hr"></hr>
         <div id="proj1">
           <div class="row mx-auto darkRow" style="padding-top: 20px"> 
-            <div class="col-xxl-10 col-xl-10 col-lg-9 col-md-6 col-sm-4 col-2">
+            <div class="col-xxl-10 col-xl-10 col-lg-9 col-md-8 col-sm-12 col-12">
               <h3 class="fs-4 purpleText text-start">Depop Webscraper API<span class="fs-5 fw-normal" style="color:white"> | JavaScript, Node.js, Cheerio, Puppeteer</span></h3>
             </div>
-            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-6 col-sm-8 col-10">
-              <h4 class="fs-5 purpleText text-end fw-normal">June 2024</h4>
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-12 col-12">
+              <h4 class="fs-6 purpleText fw-normal text-md-end text-sm-start">June 2024</h4>
             </div>   
           </div>
           <div class="row mx-auto darkRow"> 
@@ -455,18 +422,18 @@
             </div>
           </div>  
           <div class="row mx-auto darkRow" > 
-            <div class="col" style="padding-bottom: 20px;">
+            <div class="col text-center justify-content-center" style="padding-bottom: 20px;">
                 <button type="button" class="btn repoBtn" id="repoBtn1" href="https://github.com/bwally0/depop-scraper-api">Explore the Repo</button>
             </div>
           </div>
         </div>
         <div id="proj2" style="padding-top: 20px;"> 
           <div class="row mx-auto darkRow" style="padding-top: 20px"> 
-            <div class="col-xxl-10 col-xl-10 col-lg-9 col-md-6 col-sm-4 col-6">
+            <div class="col-xxl-10 col-xl-10 col-lg-9 col-md-8 col-sm-12 col-12">
               <h3 class="fs-4 purpleText text-start">Personal Website<span class="fs-5 fw-normal" style="color:white"> | HTML, Bootstrap CSS, JavaScript </span></h3>
             </div>
-            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-6 col-sm-8 col-6">
-              <h4 class="fs-5 purpleText text-end fw-normal">July 2024</h4>
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-12 col-12">
+              <h4 class="fs-6 purpleText fw-normal text-md-end text-sm-start">July 2024</h4>
             </div>
           </div>
           <div class="row mx-auto darkRow"> 
@@ -479,75 +446,122 @@
             </div>
           </div>
           <div class="row mx-auto darkRow" > 
-            <div class="col" style="padding-bottom: 20px;">
+            <div class="col text-center justify-content-center" style="padding-bottom: 20px;">
                 <button type="button" class="btn repoBtn" id="repoBtn2">Explore the Repo</button>
             </div>
           </div> 
         </div>
       </div>
-      <div class="container-fluid text-center justify-content-center" id="projects" style="background-color: rgb(41, 39, 41); padding-top: 50px;"> 
-        <h2 class="fs-3" style="color: rgb(179, 140, 179);">Extracurriculars</h2>
+      <div class="container-fluid" id="projects" style="background-color: rgb(41, 39, 41); padding-top: 50px;"> 
+        <h2 class="fs-3 text-center justify-content-center" style="color: rgb(179, 140, 179);">Extracurriculars</h2>
         <hr class="mx-auto mb-3 custom-hr"></hr>
         <div id="FACE">
           <div class="row mx-auto darkRow" style="padding-top: 20px"> 
-            <div class="col-xxl-10 col-xl-10 col-lg-9 col-md-6 col-sm-4 col-2">
+            <div class="col">
               <h3 class="fs-4 purpleText text-start">Fulton Accelerated Community Engagement (FACE)</h3>
             </div>   
           </div>
           <div class="row mx-auto darkRow"> 
-            <div class="col">
+            <div class="col-xxl-9 col-xl-9 col-lg-8 col-md-6 col-sm-12 col-12">
               <h4 class="fs-4 fw-normal text-start purpleText">Student Member</h4>
-                <ul id="courses" style="font-size:1.1em;">
-                  <li>Completed 5 Diversity, Equity, and Inclusion Workshops, covering topics related to class, nationality, and politics.</li>
-                  <li>Observed and analyzed 3 Fulton Student Organization Meetings and interviewed Fulton Student leaders.</li>
-                  <li>Presented at a poster session and attended "Lunch and Learn" workshops regarding professional development.</li>
-                </ul>
             </div>
-            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-6 col-sm-8 col-10">
-              <h4 class="fs-5 purpleText text-end fw-normal">Oct 2022 - May 2023</h4>
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <h4 class="fs-6 purpleText text-md-end text-sm-start fw-normal">Oct 2022 - May 2023</h4>
             </div> 
+            <div class="col">
+              <ul id="courses" style="font-size:1.1em;">
+                <li>Completed 5 Diversity, Equity, and Inclusion Workshops, covering topics related to class, nationality, and politics.</li>
+                <li>Observed and analyzed 3 Fulton Student Organization Meetings and interviewed Fulton Student leaders.</li>
+                <li>Presented at a poster session and attended "Lunch and Learn" workshops regarding professional development.</li>
+              </ul>
+            </div>
           </div>
           <div class="row mx-auto darkRow"> 
-            <div class="col">
+            <div class="col-xxl-9 col-xl-9 col-lg-8 col-md-6 col-sm-12 col-12">
               <h4 class="fs-4 fw-normal text-start purpleText">Peer Leader</h4>
-                <ul id="courses" style="font-size:1.1em;">
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <h4 class="fs-6 purpleText fw-normal text-md-end text-sm-start">Aug 2023 - Present</h4>
+            </div>
+            <div class="col">
+              <ul id="courses" style="font-size:1.1em;">
                   <li>Led 2 teams across different campuses, totaling 10 students through the program, providing guidance and facilitating an engineering, problem-solving group project.</li>
                   <li>Hosted and assisted with 10 Lunch and Learn Presentations focusing on special topics chosen by program faculty and other peer leaders, modeling different aspects of engineering leadership.</li>
                   <li>Graded 200+ assignments while providing insightful feedback and discussed results with students to help them further understand the deliverable.</li>
                   <li>Assisted students through the CliftonStrengths process, helping them better understand their top 5 strengths that provide insight into their leadership style.</li>
                 </ul>
             </div>
-            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-6 col-sm-8 col-10">
-              <h4 class="fs-5 purpleText text-end fw-normal">Aug 2023 - Present</h4>
+            <div class="container">
+              <div class="row mx-auto align-items-center justify-content-center">
+                <div class="my-2 col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12">
+                  <img src="assets\FACE1.jpeg" class="img-fluid rounded" alt="Image 1">
+                </div>
+                <div class="my-2 col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12">
+                  <img src="assets\FACE4.jpeg" class="img-fluid rounded" alt="Image 2">
+                </div>
+                <div class="my-2 col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12">
+                  <img src="assets\FACE3.jpg" class="img-fluid rounded" alt="Image 3">
+                </div>
+              </div> 
             </div>
-            <div class="row mx-auto">
-              <div class="col">
-                <img src="assets\FACE1.jpeg" height="250px" width="auto" style="margin: 20px 0px">
+            <div class="row mx-autodarkRow"> 
+              <div class="col text-start">
+                <h5 class="fw-light text-center" style="color: white; font-size: .95em; padding-top:20px">
+                  <em>The Fulton Accelerated Community Engagement (FACE) program is a new program that was introduced to the Fulton Schools of Engineering in Fall 2022. 
+                  It is a year-long program where students can be paid to develop their leadership skills and experience what it takes to be a successful Fulton student leader.</em></h5>
               </div>
-              <div class="col">
-                <img src="assets\FACE2.jpeg" height="250px" width="auto" style="margin: 20px 0px">
-              </div>
-              <div class="col">
-                <img src="assets\FACE3.jpg" height="250px" width="auto" style="margin: 20px 0px">
-              </div>
-            </div> 
+            </div>
           </div>
         </div>  
         <div id="NGSC" style="padding-top: 20px">
           <div class="row mx-auto darkRow" style="padding-top: 20px"> 
-            <div class="col-xxl-10 col-xl-10 col-lg-9 col-md-6 col-sm-4 col-2">
+            <div class="col-xxl-9 col-xl-9 col-lg-8 col-md-6 col-sm-12 col-12">
               <h3 class="fs-4 purpleText text-start">Next Generation Service Corps (NGSC)</h3>
             </div>
-            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-6 col-sm-8 col-10">
-              <h4 class="fs-5 purpleText text-end fw-normal">Aug 2022 - Present</h4>
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <h4 class="fs-5 purpleText fw-normal text-md-end text-sm-start">Aug 2022 - Present</h4>
             </div>    
           </div>
           <div class="row mx-auto darkRow"> 
             <div class="col">
                 <ul id="courses" style="font-size:1.1em;">
-                  <li></li>
+                  <li>Taken 4/6 classes towards the Cross Sector Leadership Certificate</li>
+                  <li>Logged 20+ Engagement Activities</li>
+                  <li>Attended 8+ leadership workshops, mission team summits, and yearly retreats</li>
                 </ul>
             </div>
+          </div>
+          <div class="row mx-auto darkRow" style="padding-top: 10px"> 
+            <div class="col-xxl-9 col-xl-9 col-lg-8 col-md-6 col-sm-12 col-12">
+              <h3 class="fs-5 purpleText text-start">Mission Team 3: Criminal Justice and Security</h3>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <h4 class="fs-6 purpleText fw-normal text-md-end text-sm-start">Aug 2022 - May 2024</h4>
+            </div>    
+          </div>
+          <div class="row mx-auto darkRow"> 
+            <div class="col">
+                <ul id="courses" style="font-size:1.1em;">
+                  <li>Assisted with 10+ events regarding criminal justice, security, community engagement opportunities, and lowering recidivism rates.</li>
+                  <li>Hosted discussions regarding criminal education in attempts to lower recidivism rates</li>
+                </ul>
+            </div>
+          </div>
+          <div class="row darkRow mx-auto align-items-center justify-content-center">
+            <div class="my-2 col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12">
+              <img src="assets\mt.png" class="img-fluid rounded" alt="Image 1">
+            </div>
+          </div>
+          <div class="row mx-auto darkRow"> 
+            <div class="col text-start">
+              <h5 class="fw-light text-center" style="color: white; font-size: .95em; padding-top:10px">
+                <em>"Launched in 2015, the NGSC offers students a unique opportunity to learn about 
+                  complex challenges from different perspectives; develop essential leadership skills through 
+                  experiential learning; and build a diverse network of student peers, accomplished leaders, 
+                  and community members that will aid them in achieving their goals."</em>
+              </h5>
+            </div>
+          </div>
         </div>
       </div>
     </main>
