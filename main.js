@@ -6,4 +6,20 @@ $(document).ready(function() {
     $('#repoBtn2').click(function() {
         window.open('https://github.com/oabuasba/personal-website', '_blank');
     });
+
+    $('#ucrc').click(function() {
+        window.open('https://globalfutures.asu.edu/urban-climate-research-center/', '_blank');
+    });
+
+    $('#swch').click(function() {
+        window.open('https://www.sunwestcustomhomes.com/', '_blank');
+    });
+
+    $('#faceWeb').click(function() {
+        window.open('https://engineering.asu.edu/face/', '_blank');
+    });
+
+    $('#ngscWeb').click(function() {
+        window.open('https://sites.google.com/asu.edu/ngsc/home?authuser=0', '_blank');
+    });
 });
