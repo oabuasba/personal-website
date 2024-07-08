@@ -1,5 +1,5 @@
 .navbar-custom {
-  background-color: rgb(37, 37, 37);
+  background-color: #1f1e1e;
   width: 100%;
   position: sticky;
 }
@@ -18,21 +18,24 @@
 }
 
 .dropdown-menu {
-  color: white;
-  background-color: rgb(37, 37, 37);
+  background-color: #1f1e1e;
 }
 
 #about {
   color: rgb(179, 140, 179);
-  background-color: rgb(41, 39, 41);
+  background-color: #292729;
   text-align: center;
   padding: 25px;
 }
 
 #education {
-  color: rgb(179, 140, 179);
+  color: white;
   text-align: start;
-  background-color: rgb(41, 39, 41);
+  background-color: #292729
+}
+
+#eduPane {
+  background-color: #1f1e1e;
 }
 
 #courses {
@@ -42,8 +45,7 @@
 }
 
 #courseList {
-  color: rgb(179, 140, 179);
-  background-color: rgb(236, 203, 232);
+  color: rgb(73, 70, 73);
 }
 
 #coursePane {
@@ -51,48 +53,43 @@
   border: solid;
 }
 
-#eduPane {
-  background-color: rgb(37, 37, 37);
-}
-
 .custom-hr {
   border: 0;
-  border-top: 5px solid rgb(179, 140, 179); 
+  border-top: 5px solid rgb(179, 140, 179);
   width: 80%;
   margin: 0 auto 5rem; 
 }
 
-.purpleText {
-  color: rgb(179, 140, 179);
+.purpleText1 {
+  color: rgb(255, 169, 231);
 }
 
-.swch {
-  border-radius: 10px;
-  margin: auto;
-  background-color:  rgb(179, 140, 179);
+.purpleText2 {
+  color: rgb(255, 169, 231);
+}
+
+.purpleText3 {
+  color: #d1c0f6
 }
 
 .darkRow {
-  background-color: rgb(37, 37, 37);
+  background-color: #1f1e1e;  
   width: 75%;
 }
-
-/* .hiddenProgLangs {
-  display: block;
-} */
 
 .repoBtn {
   color: white;
   border: 5px #ffffff solid;
   border-radius: 100px;
   width: auto;
-  height: "auto";
+  height: auto;
   font-size: 1.1em;
 }
 
 .repoBtn:hover {
-  border-color: rgb(179, 140, 179);
-  background-color: rgb(179, 140, 179);
+  border-color: rgb(255, 169, 231);
+  background-color: rgb(255, 169, 231);
+  color: white;
 }
 
 .skillFrame {
