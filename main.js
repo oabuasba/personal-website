@@ -22,4 +22,14 @@ $(document).ready(function() {
     $('#ngscWeb').click(function() {
         window.open('https://sites.google.com/asu.edu/ngsc/home?authuser=0', '_blank');
     });
+
+    $('#gitHub').click(function() {
+        window.open('https://github.com/oabuasba', '_blank');
+    });
+
+    $('#LinkedIn').click(function() {
+        window.open('https://www.linkedin.com/in/omar-abuasba-2796ab227/', '_blank');
+    });
+
+    
 });

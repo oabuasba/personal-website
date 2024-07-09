@@ -22,7 +22,7 @@
 }
 
 #about {
-  color: rgb(179, 140, 179);
+  color: #b38cb3;
   background-color: #292729;
   text-align: center;
   padding: 25px;
@@ -132,4 +132,13 @@
 
 #txtFrame2 {
   margin: 40px 20px;
+}
+
+#bio {
+  width: 75%;
+}
+
+#bioPane {
+  background-color: #292729;
+  border-color: #292729;
 }
