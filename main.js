@@ -7,6 +7,14 @@ $(document).ready(function() {
         window.open('https://github.com/oabuasba/personal-website', '_blank');
     });
 
+    $('#repoBtn3').click(function() {
+        window.open('https://github.com/bwally0/sunhacks-fall24', '_blank');
+    });
+
+    $('#repoBtn4').click(function() {
+        window.open('https://devpost.com/software/gymgoat-workout-finder', '_blank');
+    });
+
     $('#ucrc').click(function() {
         window.open('https://globalfutures.asu.edu/urban-climate-research-center/', '_blank');
     });
