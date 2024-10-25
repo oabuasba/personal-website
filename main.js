@@ -39,5 +39,26 @@ $(document).ready(function() {
         window.open('https://www.linkedin.com/in/omar-abuasba-2796ab227/', '_blank');
     });
 
+    $('#strength1').click(function() {
+        window.open('https://www.gallup.com/cliftonstrengths/en/252248/futuristic-theme.aspx', '_blank');
+    });
+
+    $('#strength2').click(function() {
+        window.open('https://www.gallup.com/cliftonstrengths/en/252323/restorative-theme.aspx', '_blank');
+    });
+
+    $('#strength3').click(function() {
+        window.open('https://www.gallup.com/cliftonstrengths/en/252170/belief-theme.aspx', '_blank');
+    });
+
+    $('#strength4').click(function() {
+        window.open('https://www.gallup.com/cliftonstrengths/en/252161/arranger-theme.aspx', '_blank');
+    });
+
+    $('#strength5').click(function() {
+        window.open('https://www.gallup.com/cliftonstrengths/en/252320/responsibility-theme.aspx', '_blank');
+    });
+
+
     
 });
